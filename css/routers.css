@@ -1,0 +1,23 @@
+
+
+/* Variables */
+@import url('./variables/AllColors.css');
+@import url('./variables/AllSizes.css');
+
+/* Others */
+
+@import url('./others/Animations/animations.css');
+@import url('./others/Queries/formQueries.css');
+
+/* Classes */
+
+@import url('./body.css');
+@import url('./alert.css');
+@import url('./formHeader.css');
+
+
+@import url('./form.css');
+@import url('./formBody.css');
+
+
+

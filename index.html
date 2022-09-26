@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./index.css">
+  <title>Formulario de Cadastro </title>
+</head>
+<body>
+    <div class="alert-container invisible" id="modal-alert">
+       
+        <p></p>
+         <div class="x-modal" id="close-modal"><span class="x right"></span><span class="x left"></span></div> 
+    </div>
+    <form action="#" class="form-form" id="form-cadastro" method="POST"> 
+
+        <header class="form-header​"   >
+            <h1 class="form-header_page-title"><nobr>Cadastro de Usuario</nobr></h1>
+            <div class="form-header_progress-bar">
+
+                <div class="progress-circle" ></div>
+                <div class="progress-bar" ><div></div></div>
+
+                <div class="progress-circle" ></div>
+                <div class="progress-bar"><div></div></div>
+
+                <div class="progress-circle" ></div>
+                <div class="progress-bar"><div></div></div>
+
+                <div class="progress-circle"        ></div>
+                <div class="progress-bar"    ><div></div></div>
+                <div class="progress-circle"></div>
+
+            </div>
+        </header>  
+
+        <main class="form-body" >
+
+                <div class="form-body_step" >
+                    
+                    <fieldset class="form-body_fieldset">
+                        <legend class="step_legend">
+                            Ola, qual vai ser o seu login e senha para logar em nosso site?
+                        </legend>
+
+                        <div class="step_content">
+                            <label for="login" class="label-cad-login">LOGIN</label>
+                            <input id="login"  class="input_general" type="text"    name="login-login"autocomplete="off">
+
+                            <label for="senha" class="label-cad-senha">SENHA</label>
+                            <input id="senha"  class="input_general" type="password" name="login-senha">
+                        </div>
+                    
+                    </fieldset>
+                </div>
+
+                <div class="form-body_step" >
+
+                    <fieldset class="form-body_fieldset">
+                        <legend>Ok, agora alguns dados pessoais</legend>
+                        <div class="step_content">
+                            <label>Nome</label>
+                            <input type="text" name="data-nome" id="nome">
+
+                            <label>Data de Nascimento</label>
+                            <input type="date" name="data-date" id="datadenascimento"/>
+
+                            <fieldset>
+                                <legend>Você se indentifica como:</legend>
+
+                                <div>
+                                    <input type="radio" value="masculino" checked name="genero" id="masculino">
+                                    <label for="generoMasc">Masculino</label>
+                                </div>
+                                    
+                                <div>
+                                    <input type="radio" value="feminino"          name="genero" id="feminino">
+                                    <label for="generoFemi">Feminino</label>
+                                </div>
+                                
+                            </fieldset>
+                
+                            <select  class="select-estado" name="data-state" id="estado">
+                                <option>-SELECIONE O ESTADO EM QUE RESIDE-</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-body_step" >
+
+                    <fieldset class="form-body_fieldset">
+                        <legend>Dados para contato</legend>
+
+                        <div class="step_content">
+                            <label for="i-email"> E-mail</label>
+                            <input type="email"  name="contact-email" id="email"/>
+
+                            <label for="i-whats"> WhatsApp</label>
+                            <input type="tel"   name="contact-whats"  id="whatsApp"/>
+                        </div>
+
+                    </fieldset>
+                </div>
+
+                <div class="form-body_step" >
+
+                    <fieldset class="form-body_fieldset">
+
+                        <legend>Qual nivel você considera que esta nas tecnologias abaixo:</legend>
+
+                        <div class="step_content">
+                            <div class="step_skill">
+                                <label for="i-html">HTML</label>
+                                <input type="range" id="html"  value='1' min='1' max='3'step="1" name="skills-html">
+                                <sub class="level-description" id="html_level">Basico</sub>
+                            </div>
+
+                            <div class="step_skill">
+                                <label for="i-html">CSS</label>
+                                <input type="range" id="css"  value='1' min='1' max='3'step="1"  name="skills-css" >
+                                <sub class="level-description" id="css_level">Basico</sub>
+                            </div>
+
+                            <div class="step_skill">
+                                <label for="i-html">JavaScript</label>
+                                <input type="range" id="javascript"  value='1' min='1' max='3'step="1"  name="skills-js" >
+                                <sub class="level-description" id="js_level">Basico</sub>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </div>
+
+                <div class="form-body_step" >
+        
+                    <fieldset class="form-body_fieldset">
+                         <label  for="contract" class="contract">
+                            <input type="checkbox" class="agree-check" name="contract" id="contract">
+                            Clique aqui para concordar com os termos de sei la oque
+                        </label>
+            
+                        <input type="submit" value="Cadastrar"  id="btn_submit"/>
+                    </fieldset>
+
+                </div>
+
+        <nav class="steps_nav">
+            <button class="btn_previous btns_steps shadow-right" id="btn_previous"> &lt; &lt; </button>
+            <button class="btn_next btns_steps shadow-left" id="btn_next"> >> </button>
+        </nav>
+
+        </main>
+
+    </form>
+    <script src="./JS/index.js" type="module" ></script>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+:root
+{
+    --body-width              : 100vw;
+    --body-height             : 100vh;
+    --body-min-height         : 600px;
+    --body-min-width          : 350px;
+
+             /* Static , Flex */
+        --form-form-width        :  100%;
+        --form-form-height       :  100%;
+
+             /* static, block */
+            --form-header-width               : 100%;
+            --form-header-height              : 20%;
+
+                /* Absolute , Block */
+                --form-header_page-title-width        : 90%;
+                --form-header_page-title-left         : calc(50% - calc(var(--form-header_page-title-width)/2));
+                --form-header_page-title-bottom       : 25px;
+
+                /* Absolute , Flex */
+                --form-header_progress-bar_container-width      : 100%;
+                --form-header_progress-bar_container-bottom     : 5px;
+                --form-header_progress-bar_container-left       : calc(50% - calc(var(--form-header_progress-bar_container-width)/2));
+
+                    /* static , Block */
+                    --progress-circle-width     : 20px;
+                    --progress-circle-height    : 20px;
+
+                    /* static , Block */
+                    --progress-bar-width        : 20px;
+                    --progress-bar-height       : 5px;
+
+                    --bar-filler-width          : 0;
+                    --bar-filler-width-100      : 100%;
+                    --bar-filler-height         : var(--progress-bar-height);
+                    --bar-filler-left           : 0px;
+
+            --form-body-width  : 100%;
+            --form-body-height : 80%;
+
+                    --form-body_fieldset-width  : 100px;
+                    --form-body_fieldset-height : 500px;
+
+                    --steps-nav-width : 90%;
+
+                        --steps-width             : 90%;
+                        --steps-height            : 90%;
+                        --steps-border-color      : black;
+                        --steps-bc                : grey;
+
+                        --steps-nav-padding  : 10px;
+                         /* static , flex */
+                        --form-body_fieldset-width    : 90%;
+                        --form-body_fieldset-height   : 90%;
+
+                        /* static, block  */
+                        --fieldsets-legend-width        : 90%;
+                        --fieldsets-legend-margin       : auto;
+                        --fieldsets-legend-padding      : 5px;
+                        
+                        --second-fieldset-width     : 90%;
+                        --second-fieldset-height    : 30%;
+
+                                --inputs-container-width       : 100%;
+                                --inputs-container-height      : 90%;
+                                --inputs-container-gap         : 10px;
+                                    /* static , inline-block */
+                                    --all-fieldsets-input-width     : 200px;
+                                    --all-fieldsets-input-height    : 50px;
+                                    --all-fieldsets-input-font-size : 100%;
+      
+}

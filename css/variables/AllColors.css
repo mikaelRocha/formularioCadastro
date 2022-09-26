@@ -1,0 +1,39 @@
+:root
+{
+         /* Colors */
+         --main-font-color        : white;
+         --body-bc                : #252525;
+            /* Header */
+            --progress-done           : purple;
+            --progress-to-do          : white;
+            /* MAIN */
+
+
+            --fieldsets-border-color  : rgb(0, 0, 0);
+
+            --fieldsets-input-shadow : black;
+            --fieldsets-input-border : rgb(69, 69, 69);
+            --fieldsets-legend-shadow: black;
+
+            --btns-steps-bc          :  rgb(61, 61, 61);
+            --btns-steps-color-hover :  rgb(255, 255, 255);
+
+          
+        
+
+         /* Fontes */
+
+         --general-font-size      : 15pt;   
+
+            /* Header */
+            --form-header_page-title-font-size    : 20pt;
+}
+.shadow-right
+{
+   box-shadow          : 0px 0px 5px  5px black ;
+}
+
+.shadow-left
+{
+   box-shadow          : 0px 0px 5px 5px black;
+}

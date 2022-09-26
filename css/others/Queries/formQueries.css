@@ -1,0 +1,12 @@
+
+
+@media (max-width: 350px) 
+{
+    .btns_steps
+    {
+        padding             : 10px;
+        background          : rgba(63, 63, 63, 0.418);
+        font-size           : 5pt;
+        color               : rgb(255, 255, 255) ;
+    }
+}

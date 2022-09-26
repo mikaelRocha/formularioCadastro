@@ -1,0 +1,12 @@
+
+.form-form
+{
+    display             : flex;
+    width               : var(--form-form-width);
+    height              : var(--form-form-height);
+
+    flex-direction      : column;
+}
+
+
+

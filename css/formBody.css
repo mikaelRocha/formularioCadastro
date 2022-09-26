@@ -1,0 +1,130 @@
+
+
+.form-body{
+    display             : flex;
+    position            : relative ;
+    width               : var(--form-body-width);
+    height              : var(--form-body-height);
+
+    align-items         : center;
+    justify-content     : center;
+}
+.form-body_step
+{
+    display         : flex;
+    position        : absolute;
+    width           : var(--steps-width);
+    min-width       : var(--steps-min-width);
+    height          : var(--steps-height);
+    min-height      : var(--steps-min-height) ;
+    border          : 2px solid var(--steps-border-color);
+
+    padding         : 0px 10px ;
+    align-items     : center;
+    justify-content : center;
+    background      : var(--steps-bc);
+}
+.form-body_step:nth-child(5){ z-index: 1;}
+.form-body_step:nth-child(4){ z-index: 2;}
+.form-body_step:nth-child(3){ z-index: 3;}
+.form-body_step:nth-child(2){ z-index: 4;}
+.form-body_step:nth-child(1){ z-index: 5;}
+
+.form-body_fieldset
+{
+    display         : flex;
+    width           : var(--form-body_fieldset-width);   
+    height          : var(--form-body_fieldset-height);
+    border          : 1px solid var(--fieldsets-border-color) ;
+
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+}
+
+
+
+
+.form-body_fieldset legend
+{
+    width               : var(--fieldsets-legend-width);
+    margin              : var(--fieldsets-legend-margin);
+    border-radius       : 5px;
+    text-align          : center;
+    box-shadow          : 5px -5px 10px var(--fieldsets-legend-shadow) ;
+
+    padding             : var(--fieldsets-legend-padding);
+}
+.step_content
+{
+   position             : relative;
+   display              : flex;
+   width                : var(--inputs-container-width);
+   height               : var(--inputs-container-height);
+
+   gap                  : var(--inputs-container-gap);
+   flex-direction       : column;
+   align-items          : center;
+   justify-content      : center  ;
+}
+ 
+    .form-body_fieldset input:focus
+    {
+    outline             : none;
+    }
+    .select-estado
+{
+    max-width       :  200px;
+}
+.step_skill
+{
+display         : flex ;
+width           : 300px;
+
+justify-content : space-around ;
+}
+
+.step_skill label
+{
+flex: 1;
+}
+.step_skill input
+{
+padding         :0;
+}
+.level-description
+{
+display: flex;
+flex: 1;
+align-items: flex-end;
+font-size: 8pt;
+}
+
+.steps_nav
+{
+    display             : flex;
+    position            : absolute;
+    width               : var(--steps-nav-width);
+    bottom              : 5%        ;
+    align-self          : flex-end;
+    justify-content     : space-between;
+    pointer-events      : none ;
+    z-index             : 6;
+}
+.btns_steps
+{
+    font-size           : var(--steps-nav-width);
+    padding             : var(--steps-nav-padding);
+    pointer-events      : all;
+    border-radius       : 5px ;
+    border              : 10px groove gray;
+    
+    background          : var(--steps-bc);
+}
+.btns_steps:hover
+{
+    color               : var(--btns-steps-color-hover);
+}
+
+
+

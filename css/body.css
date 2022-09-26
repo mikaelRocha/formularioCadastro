@@ -1,0 +1,20 @@
+
+body
+{
+    /* Fonts */
+    
+    --btns-steps-font-size   : 20pt;
+
+    width               : var(--body-width) ;
+    min-width           : var(--body-min-width);
+    height              : var(--body-height) ;
+    min-height          : var(--body-min-height) ;
+    background          : var(--body-bc); 
+    color               : var(--main-font-color) ;
+    font-size           : var(--general-font-size);
+}
+
+input
+{
+    padding:  10px;
+}

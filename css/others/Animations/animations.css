@@ -1,0 +1,30 @@
+.fillbarClass{ animation: fillbar 0.5s linear forwards;}
+.slideToLeft{ animation: rollerLeft 0.5s linear forwards;}
+.slideToRight{ animation: rollerRight 0.5s linear forwards;}
+@keyframes fillbar 
+{
+    100%
+    {
+        width: var(--bar-filler-width-100);
+    }
+}
+
+@keyframes rollerLeft 
+{
+    100%{
+   
+         transform: translateX(-200%);
+    }
+}
+
+@keyframes rollerRight
+{
+   0%
+   {
+    transform: translateX(-200%);
+   }
+    100%{
+        
+        transform: translateX(0%);
+    }
+}

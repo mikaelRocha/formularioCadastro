@@ -1,0 +1,60 @@
+.form-header​
+{
+    position: relative;
+    height      : var(--form-header-height);
+    width       : var(--form-header-width);
+} 
+/* ########################################################################################################## */
+.form-header_page-title
+{
+    --form-header_page-title-h1-width: 90%;
+
+    position         : absolute;
+    width            : var(--form-header_page-title-width) ;
+    left             : var(--form-header_page-title-left);
+    bottom           : var(--form-header_page-title-bottom ) ;
+     
+    text-align       : center ;
+    font-size        : var(--form-header_page-title-font-size)  ;
+}
+
+/* ########################################################################################################## */
+.form-header_progress-bar
+{
+    position            : absolute;
+    display             : flex;
+    width               : var(--form-header_progress-bar_container-width) ;
+    bottom              : var(--form-header_progress-bar_container-bottom);
+    left                : var(--form-header_progress-bar_container-left) ;
+
+    flex-direction      : row;
+    align-items         : center;
+    justify-content     : center;
+}
+.progress-circle
+{
+    width               : var(--progress-circle-width);
+    height              : var(--progress-circle-height);
+    border-radius       : 50%;
+    background          : var(--progress-to-do);
+}
+.progress-circle:first-child
+{
+    background          : var(--progress-done);
+}
+.progress-bar
+{
+    position            : relative;
+    width               : var(--progress-bar-width);
+    height              : var(--progress-bar-height);
+    background          : var(--progress-to-do);    
+}
+.progress-bar div
+{
+    position            : absolute;
+    height              : var(--bar-filler-height);
+    width               : var(--bar-filler-width);
+    left                : var(--bar-filler-left);
+    background          : var(--progress-done);
+    z-index             : 10;
+}
